@@ -1,0 +1,103 @@
+*{
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+body{
+  background-image: url("../image/fundo.jpg");
+}
+
+header{
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+canvas{
+  border: 2px solid rgba(0,0,0,.2);;
+}
+
+.titulo{
+  margin-left: 5rem;
+}
+
+.logo{
+  margin-left: 5rem;
+  margin-top: 0;
+}
+
+.informcao__rat form{
+  max-width: 80%;
+  border-radius: .5rem;
+  box-shadow: var(--box-shadow);
+  border: .1rem solid rgba(0,0,0,.2);
+  background: transparent;
+  padding: 1rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.informcao__rat h2{
+  margin-left: 15rem;
+}
+
+.informcao__rat form .inputBox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+  
+.informcao__rat form .inputBox .input{
+  width: 49%;
+}
+
+.informcao__rat form .inputBox fieldset{
+  height: 20%;
+}
+  
+.informcao__rat form .inputBox .input span{
+  display: block;
+  padding: .5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+  
+.informcao__rat form .inputBox .input input,
+.informcao__rat form .inputBox .input textarea{
+  background: #eee;
+  border-radius: .5rem;
+  padding: 1rem;
+  font-size: 1rem;
+  color: var(--black);
+  text-transform: none;
+  margin-bottom: 0.2rem;
+  width: 100%;
+}
+  
+  
+.informcao__rat form .inputBox .input input:focus,
+.informcao__rat form .inputBox .input textarea:focus{
+  border: .2rem solid 
+}  
+  
+.informcao__rat form .inputBox .input textarea{
+  height: 6rem;
+  resize: none;
+}
+
+.informcao__rat form .inputBox .input canvas{
+  height: 4rem;
+  width: 100%;
+}
+  
+.informcao__rat form  .btn{
+  margin-top: 0;
+}

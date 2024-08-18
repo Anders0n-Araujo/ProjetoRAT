@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAT Tecmed</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <section class="informcao__rat">
+        <header>
+            <div class="logo">
+                <img src="../image/logo-tecmed.png" alt="">
+            </div>
+            <div class="titulo">
+                <h1>RAT (Relatório de Atendimento Técnico)</h1>
+            </div>
+        </header>
+        <form class="info__cli" action="">
+            <div class="informacao__cliente">
+                <div class="inputBox">
+                    <div class="input">
+                        <span> Data de Atendimento</span>
+                        <input type="date">
+                    </div>
+                    <div class="input">
+                        <span> Nome da Empresa</span>
+                        <input type="text" placeholder="Insira o Nome da Empresa">
+                    </div>
+                    <div class="input">
+                        <span>Telefone</span>
+                        <input type="number" placeholder="Insira o Numero de Telefone">
+                    </div>
+                    <div class="input">
+                        <span>Nome do Responsavel</span>
+                        <input type="text" placeholder="Insira o Nome do Responsavel">
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <div class="input">
+                        <span>Problema Relatado pelo Cliente</span>
+                        <textarea name="" placeholder="Insira O Problema Apresentado" id="" cols="30" rows="10"></textarea>
+                        </div>
+                    <div class="input">
+                        <span>Descrição da Solução realizada</span>
+                        <textarea name="" placeholder="Insira a Solução Realizada" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="info_tecnico">
+                    <div class="inputBox">
+                        <div class="input">
+                            <span>Nome do  Técnico Responsavel</span>
+                            <input type="text" placeholder="Insira o Nome do Responsavel">
+                        </div>
+                        <fieldset class="inputBox ">
+                            <legend>Tipo de Atendimento</legend>
+                        
+                            <div class="input">
+                                <input type="checkbox" id="remoto" name="Remoto" />
+                                <label for="Remoto">Remoto</label>
+                            </div>
+                            
+                            <div class="input">
+                                <input type="checkbox" id="presencial" name="presencial" />
+                                <label for="presencial">Presencial</label>
+                            </div>
+                        </fieldset>
+                        <div class="input">
+                            <span>Assinatura Cliente ou Representante </span>
+                            <canvas id="assinatura__cli" width="500" height="100"></canvas>
+                        </div>
+                        <div class="input">
+                            <span>Assinatura Tecnico Responsável</span>
+                            <canvas id="assinatura__tec" width="500" height="100"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <button id="generate-pdf"> Gerar PDF</button>
+
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js" 
+        integrity="sha512-MpDFIChbcXl2QgipQrt1VcPHMldRILetapBl5MPCA9Y8r7qvlwx1/Mc9hNTzY+kS5kX6PdoDq41ws1HiVNLdZA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
