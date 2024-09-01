@@ -17,5 +17,5 @@ btnGerarPdf.addEventListener('click' , () => {
         jsPDF: {unit: "mm", format: "a4", orientation: "portrait"} 
     }
 
-    html2pdf().set(options).from(form).save();
+    html2pdf().set(options).from(form).save().output('./RAT.pdf', 'f');
 })
