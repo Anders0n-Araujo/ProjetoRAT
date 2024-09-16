@@ -28,22 +28,25 @@ canvas_tec.addEventListener("mousemove", (e) =>{
         const x2t = e.offsetX;
         const y2t = e.offsetY;
 
-        drawCircle(x2t, y2t);
-        drawLine(xt, yt, x2t, y2t);
+        drawCircle_tec(x2t, y2t);
+        drawLine_tec(xt, yt, x2t, y2t);
 
         xt = x2t;
         yt = y2t;
+
+        console.log(drawCircle_tec(x2t, y2t));
+        console.log(drawLine_tec(xt, yt, x2t, y2t));
     }
 });
 
-function drawCircle(xt, yt){
+function drawCircle_tec(xt, yt){
     ctx_t.beginPath();
     ctx_t.arc(xt, yt, size_t, 0, Math.PI * 2);
     ctx_t.fillStyle = color_t;
     ctx_t.fill()
 }
 
-function drawLine(x1t,y1t,x2t,y2t){
+function drawLine_tec(x1t,y1t,x2t,y2t){
     ctx_t.beginPath();
     ctx_t.moveTo(x1t,y2t);
     ctx_t.lineTo(x2t,y2t)
@@ -58,4 +61,5 @@ reset_tec.addEventListener("click", () => {
 
 console.log(canvas_tec);
 console.log(reset_tec);
-console.log( ctx_t);
+console.log( xt);
+console.log( yt);
